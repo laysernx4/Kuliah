@@ -32,16 +32,3 @@ public class HitungLuas {
     }
 
 }
-
-/*
-
-public class cariLuasLingkaran {
-
-    public static void main (String[] args){
-
-        int jari-jari ;
-
-    }
-
-}
-*/
