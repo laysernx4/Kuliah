@@ -2,12 +2,13 @@ import java.util.Scanner;
 
 public class HitungLuas {
 
-    public cariLuasPersegiPanjang {
+    public static void main(String[] args) {
         int panjang;
         int lebar;
         int luas;
         Scanner input = new Scanner(System.in);
 
+        System.out.println("Menghitung Luas Persegi Panjang");
         System.out.print("Berapa panjangnya : ");
         panjang = input.nextInt();
 
@@ -17,6 +18,17 @@ public class HitungLuas {
         luas = panjang * lebar;
 
         System.out.println("Luas Persegi Panjang adalah " + luas);
+
+        double jari;
+        double luasBuleud;
+        System.out.println("Menghitung Luas Lingkaran");
+        System.out.print("Berapa jari-jarinya : ");
+        jari = input.nextInt();
+
+        luasBuleud = jari * 3.14 * 2;
+
+        System.out.println("Luas Lingkarannya adalah " + luasBuleud);
+
     }
 
 }
