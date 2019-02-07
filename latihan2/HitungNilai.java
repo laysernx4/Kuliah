@@ -3,10 +3,10 @@ import java.util.Scanner;
 public class HitungNilai {
     public static void main(String[] args) {
         Scanner i = new Scanner(System.in);
-        //String nilai;
+        String nilai;
         char nilai2;
         String grade;
-/*        System.out.print("Masukkan Nilai Anda : A/B/C/D/E");
+        System.out.print("Masukkan Nilai Anda : A/B/C/D/E");
         System.out.print("\nNilai Anda = ");
         nilai = i.nextLine();
         //pakeSwitch
@@ -32,7 +32,7 @@ public class HitungNilai {
             default:
                 System.out.print("\nSorry, you failed");
 
-*/
+
             //pakeIF
 
                 System.out.print("Masukkan Nilai (A,B,C,D,E) : ");
@@ -63,4 +63,4 @@ public class HitungNilai {
                 System.out.println(grade);
         }
     }
-//}
+}
