@@ -1,24 +1,27 @@
+import java.util.Scanner;
+
 public class HitungLuas {
 
-    public static void main(String[] args){
+    public cariLuasPersegiPanjang {
+        int panjang;
+        int lebar;
+        int luas;
+        Scanner input = new Scanner(System.in);
 
+        System.out.print("Berapa panjangnya : ");
+        panjang = input.nextInt();
+
+        System.out.print("Berapa lebarnya : ");
+        lebar = input.nextInt();
+
+        luas = panjang * lebar;
+
+        System.out.println("Luas Persegi Panjang adalah " + luas);
     }
 
 }
 
-
-
-public class cariLuasPersegiPanjang {
-
-    public static void main (String[] args){
-
-        int panjang , lebar ;
-
-    }
-
-}
-
-
+/*
 
 public class cariLuasLingkaran {
 
@@ -29,3 +32,4 @@ public class cariLuasLingkaran {
     }
 
 }
+*/
