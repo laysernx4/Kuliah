@@ -17,7 +17,7 @@ public class HitungRata {
 
         rataRata = (i1 + i2 + i3) / 3;
 
-        if (rataRata >= 70){
+        if (rataRata >= 60){
             emot = ":-)";
         }
         else{
