@@ -9,16 +9,8 @@ public class Rectangle extends Shape{
         this.lebar = lebar;
     }
 
-    public int getPanjang() {
-        return panjang;
-    }
-
     public void setPanjang(int panjang) {
         this.panjang = panjang;
-    }
-
-    public int getLebar() {
-        return lebar;
     }
 
     public void setLebar(int lebar) {

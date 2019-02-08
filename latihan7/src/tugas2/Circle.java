@@ -9,16 +9,8 @@ public class Circle extends Shape{
         this.phi = phi;
     }
 
-    public int getR() {
-        return r;
-    }
-
     public void setR(int r) {
         this.r = r;
-    }
-
-    public double getPhi() {
-        return phi;
     }
 
     public void setPhi(double phi) {
