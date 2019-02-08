@@ -1,16 +1,27 @@
 package abstrak;
 
-import javafx.application.Application;
-import javafx.stage.Stage;
+public class Main {
 
-public class Main.java extends Application{
+    public static void main(String[]args){
+        //Manusia babang = new Manusia();
+        //babang.berjalan();
+        //babang.bernapas();
+        //babang.makan();
 
-public static void main(String[]args){
-        launch(args);
-        }
+        //Person profil = new Person();
+        Person p = new Student("Budi", "Bandung", "Informatika");
 
-@Override
-public void start(Stage primaryStage){
+        System.out.println("Nama : " + p.getName());
+        System.out.println("Alamat : " + p.getAddress());
+        System.out.println("Jurusan : " + p.getDescription());
 
-        }
-        }
+        Dosen d = new Dosen("Nama dosen, M.Si.", "Alamat tempat tinggalnya");
+        d.setHonor(1000);
+        d.setTunjangan(2000);
+
+        System.out.println("Nama : " + d.getName());
+        System.out.println("Alamat : " + d.getAddress());
+        System.out.println("Gaji : " + d.getGaji());
+
+    }
+}

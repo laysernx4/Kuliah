@@ -1,16 +1,14 @@
 package abstrak;
 
-import javafx.application.Application;
-import javafx.stage.Stage;
+public class Manusia extends MakhlukHidup {
 
-public class Manusia extends Application {
-
-    public static void main(String[] args) {
-        launch(args);
+    @Override
+    public void berjalan() {
+        System.out.println("Manusia berjalan dengan dua kaki");
     }
 
     @Override
-    public void start(Stage primaryStage) {
-
+    public void makan() {
+        super.makan();
     }
 }
