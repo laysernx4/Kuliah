@@ -7,25 +7,31 @@ public class BukuAddress {
         try (FileOutputStream daptar = new FileOutputStream("daftaralamat.dat", true)) {
             Scanner input = new Scanner(System.in);
 
-            System.out.println("Masukan Nama : " + "\t");
+            System.out.println("Nama Anda: ");
             String nama = input.nextLine();
 
-            System.out.print("Masukan Alamat: " + "\t");
+            System.out.println("Alamat Anda: ");
             String alamat = input.nextLine();
 
             daptar.write(nama.getBytes());
+            daptar.write(System.getProperty("line.separator").getBytes());
             daptar.write(alamat.getBytes());
+            daptar.write(System.getProperty("line.separator").getBytes());
+            daptar.write(System.getProperty("line.separator").getBytes());
+            daptar.flush();
+            daptar.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
     private static void LihatDaptar() throws IOException {
-        try (FileInputStream input = new FileInputStream("daftaralamat.dat")) {
-            int data;
-            while ((data = input.read()) != -1) {
-                System.out.print((char) data);
+        try (FileInputStream lihat = new FileInputStream("daftaralamat.dat")) {
+            int daptar;
+            while ((daptar = lihat.read()) != -1) {
+                System.out.print((char) daptar);
             }
+            lihat.close();
         } catch (FileNotFoundException e) {
             System.out.println("Buku Alamat Masih Kosong :(");
         }
